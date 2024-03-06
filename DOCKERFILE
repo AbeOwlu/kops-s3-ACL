@@ -15,8 +15,8 @@ ARG APP_MOUNT_VOLUME="false"
 ### -------------------------------------------------------------------- Prep base image and env
 FROM debian:buster AS base
 
-RUN set -ex; \
-    apt-get update; \
+RUN set -ex && \
+    apt-get update && \
     apt-get install -y g++ libcurl4-openssl-dev libssl-dev uuid-dev zlib1g-dev libpulse-dev git make cmake
 ### --------------------------------------------------------------------
 
@@ -42,7 +42,9 @@ RUN git clone --recurse-submodules https://github.com/aws/aws-sdk-cpp && \
     cmake "${GITHUB_REPOSITORY}" -DBUILD_ONLY="${AWS_SDK_BUILD_ONLY}" -DCMAKE_BUILD_TYPE="${AWS_SDK_CPP_BUILD_TYPE}" \
     -DENABLE_TESTING=OFF && \
     make && \
-    make install
+    make install && sleep 1 && \
+    rm -rf "${GITHUB_REPOSITORY}"
+
 ### --------------------------------------------------------------------
 
 ### --------------------------------------------------------------------Build application
@@ -55,7 +57,7 @@ COPY . .
 
 RUN rm -rf build; cmake -S . -B build -DCMAKE_BUILD_TYPE="${APP_BUILD_TYPE}"
 WORKDIR /app/build/
-RUN make && if [[ "$APP_MOUNT_VOLUME" = "true" ]] ; then rm -rf /code ; fi
+RUN make && if [[ "$APP_MOUNT_VOLUME" = "true" ]] ; then rm -rf /app ; fi
 ### --------------------------------------------------------------------
 
 ### --------------------------------------------------------------------Build app container image
@@ -70,7 +72,7 @@ RUN groupadd --gid "$APP_GROUP_ID" "$APP_GROUP_NAME" \
 USER "$APP_USER_NAME"
 
 
-COPY --from=build-app /usr/local/bin/. /usr/local/bin
-COPY --from=build-app /usr/local/lib/*.so* /usr/local/lib
-ENTRYPOINT [ "/usr/local/bin/kops_s3_acl" ]
+COPY --from=build-app /usr/local/bin/. /usr/local/bin/
+COPY --from=build-app /usr/local/lib/*.so* /usr/local/lib/
+# CMD [ "kops_s3_acl" ] / ENTRYPOINT
 ### --------------------------------------------------------------------

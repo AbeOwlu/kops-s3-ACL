@@ -82,7 +82,7 @@ int main(int argc, char **argv) {
         if (outcome.GetResult().GetBuckets().size() == 0) {
             std::cout << "\nNo S3 Bucket for Kops oidc or state store found in this AWS account. No Acct ACL block changes made. Exiting..." << std::endl;
             exit = 1;
-
+            return exit;
         }
 
         Aws::STS::STSClient stsClient(clientConfig);
