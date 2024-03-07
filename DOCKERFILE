@@ -42,7 +42,7 @@ RUN git clone --recurse-submodules https://github.com/aws/aws-sdk-cpp && \
     cmake "${GITHUB_REPOSITORY}" -DBUILD_ONLY="${AWS_SDK_BUILD_ONLY}" -DCMAKE_BUILD_TYPE="${AWS_SDK_CPP_BUILD_TYPE}" \
     -DENABLE_TESTING=OFF && \
     make && \
-    make install && sleep 1 && \
+    make install &&\
     rm -rf "${GITHUB_REPOSITORY}"
 
 ### --------------------------------------------------------------------
@@ -73,6 +73,6 @@ USER "$APP_USER_NAME"
 
 
 COPY --from=build-app /usr/local/bin/. /usr/local/bin/
-COPY --from=build-app /usr/local/lib/*.so* /usr/local/lib/
-# CMD [ "kops_s3_acl" ] / ENTRYPOINT
+COPY --from=build-app /usr/local/lib/. /usr/local/lib/
+# CMD [ "./kops_s3_acl" ]
 ### --------------------------------------------------------------------
