@@ -48,7 +48,7 @@ int main(int argc, char **argv) {
 
     Aws::SDKOptions options;
     // Optionally change the log level for debugging.
-    //   options.loggingOptions.logLevel = Utils::Logging::LogLevel::Debug;
+    // options.loggingOptions.logLevel = Utils::Logging::LogLevel::Info;
     
     Aws::InitAPI(options); // Once.
     int exit = 0;
@@ -62,7 +62,9 @@ int main(int argc, char **argv) {
         auto provider = Aws::MakeShared<DefaultAWSCredentialsProviderChain>("alloc-tag");
         auto creds = provider->GetAWSCredentials();
         if (creds.IsEmpty()) {
-            std::cerr << "\nFailed authentication" << std::endl;
+            std::cerr << "\nFailed authentication... kops_s3_acl bailing out..." << std::endl;
+            exit = 1;
+            return exit;
         }
 
         Aws::S3::S3Client s3Client(clientConfig);

@@ -10,6 +10,7 @@ ARG APP_USER_ID="1000"
 ARG APP_GROUP_NAME="appgroup"
 ARG APP_GROUP_ID="1000"
 ARG APP_MOUNT_VOLUME="false"
+ARG AWS_ROLE_SESSION_NAME="kops_s3_acl"
 ### --------------------------------------------------------------------
 
 ### -------------------------------------------------------------------- Prep base image and env
@@ -67,6 +68,7 @@ ARG APP_USER_ID
 ARG APP_GROUP_ID
 ARG APP_GROUP_NAME
 
+ENV AWS_ROLE_SESSION_NAME=${AWS_ROLE_SESSION_NAME}
 RUN groupadd --gid "$APP_GROUP_ID" "$APP_GROUP_NAME" \
     && useradd --uid "$APP_USER_ID" --gid "${APP_GROUP_ID}" --shell /bin/bash "$APP_USER_NAME"
 USER "$APP_USER_NAME"

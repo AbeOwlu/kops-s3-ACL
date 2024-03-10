@@ -1,0 +1,819 @@
+[INFO] 2024-03-10 16:50:54.974 Aws_Init_Cleanup [0x1d9975c40] Initiate AWS SDK for C++ with Version:1.11.201
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:54.974 Aws::Config::AWSConfigFileProfileConfigLoader [0x1d9975c40] Initializing config loader against fileName /Users/oluabe/.aws/credentials and using profilePrefix = 0
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:54.974 Aws::Config::AWSConfigFileProfileConfigLoader [0x1d9975c40] Initializing config loader against fileName /Users/oluabe/.aws/config and using profilePrefix = 1
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:54.974 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: default
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: default
+[DEBUG] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTSDE2VQAI
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: test
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: test
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_session_token in the profile: test
+[DEBUG] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key ASIAVXD5NTLTYFVGO2XB
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: wbdev
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: wbdev
+[DEBUG] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTZIZNGE74
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::AWSProfileConfigLoaderBase [0x1d9975c40] Successfully reloaded configuration.
+[DEBUG] 2024-03-10 16:50:54.975 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:54.975 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:54.975 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[DEBUG] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Found region us-east-1
+[DEBUG] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Found region us-east-2
+[DEBUG] 2024-03-10 16:50:54.975 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Found region us-west-2
+[INFO] 2024-03-10 16:50:54.975 Aws::Config::AWSProfileConfigLoaderBase [0x1d9975c40] Successfully reloaded configuration.
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff043c0: Initializing edge-triggered kqueue
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff043c0: starting event-loop thread.
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff04b00: Initializing edge-triggered kqueue
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x16d24b000] id=0x13ff043c0: main loop started
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff04b00: starting event-loop thread.
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x16d24b000] id=0x13ff043c0: default timeout 100s, and max events to process per tick 100
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff04130: Initializing edge-triggered kqueue
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x16d2d7000] id=0x13ff04b00: main loop started
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x16d2d7000] id=0x13ff04b00: default timeout 100s, and max events to process per tick 100
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff04130: starting event-loop thread.
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff05b90: Initializing edge-triggered kqueue
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x16d363000] id=0x13ff04130: main loop started
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x16d363000] id=0x13ff04130: default timeout 100s, and max events to process per tick 100
+[INFO] 2024-03-10 16:50:54.975 event-loop [0x1d9975c40] id=0x13ff05b90: starting event-loop thread.
+[INFO] 2024-03-10 16:50:54.976 event-loop [0x16d3ef000] id=0x13ff05b90: main loop started
+[INFO] 2024-03-10 16:50:54.976 event-loop [0x16d3ef000] id=0x13ff05b90: default timeout 100s, and max events to process per tick 100
+[INFO] 2024-03-10 16:50:54.976 dns [0x1d9975c40] id=0x13ff06880: Initializing default host resolver with 8 max host entries.
+[INFO] 2024-03-10 16:50:54.976 channel-bootstrap [0x1d9975c40] id=0x13ff06c20: Initializing client bootstrap with event-loop group 0x13ff04510
+[DEBUG] 2024-03-10 16:50:54.976 HttpClientFactory [0x1d9975c40] Initializing Http Static State
+[DEBUG] 2024-03-10 16:50:54.976 HttpClientFactory [0x1d9975c40] Initializing Curl Http Client
+[INFO] 2024-03-10 16:50:54.981 CurlHttpClient [0x1d9975c40] Initializing Curl library with version: 8.4.0, ssl version: SecureTransport (LibreSSL/3.3.6)
+[INFO] 2024-03-10 16:50:54.997 EC2MetadataClient [0x1d9975c40] Using IMDS endpoint: http://169.254.169.254
+[DEBUG] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] Request Compression enabled
+[DEBUG] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] ClientConfiguration will use MinReqCompression: 10240
+[DEBUG] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] ClientConfiguration will use SDK Auto Resolved profile: [default] if not specified by users.
+[INFO] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] Retry Strategy will use the default max attempts.
+[INFO] 2024-03-10 16:50:54.997 EC2MetadataClient [0x1d9975c40] Creating AWSHttpResourceClient with max connections 2 and scheme http
+[INFO] 2024-03-10 16:50:54.997 CurlHandleContainer [0x1d9975c40] Initializing CurlHandleContainer with size 2
+[DEBUG] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] Request Compression enabled
+[DEBUG] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] ClientConfiguration will use MinReqCompression: 10240
+[DEBUG] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] ClientConfiguration will use SDK Auto Resolved profile: [default] if not specified by users.
+[INFO] 2024-03-10 16:50:54.997 ClientConfiguration [0x1d9975c40] Retry Strategy will use the default max attempts.
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::AWSConfigFileProfileConfigLoader [0x1d9975c40] Initializing config loader against fileName /Users/oluabe/.aws/credentials and using profilePrefix = 0
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:54.997 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:54.997 ProfileConfigFileAWSCredentialsProvider [0x1d9975c40] Setting provider to read credentials from /Users/oluabe/.aws/credentials for credentials file and /Users/oluabe/.aws/config for the config file , for use with profile default
+[INFO] 2024-03-10 16:50:54.997 ProcessCredentialsProvider [0x1d9975c40] Setting process credentials provider to read config from default
+[WARN] 2024-03-10 16:50:54.997 STSAssumeRoleWithWebIdentityCredentialsProvider [0x1d9975c40] Token file must be specified to use STS AssumeRole web identity creds provider.
+[INFO] 2024-03-10 16:50:54.997 SSOBearerTokenProvider [0x1d9975c40] Setting sso bearerToken provider to read config from default
+[INFO] 2024-03-10 16:50:54.997 SSOCredentialsProvider [0x1d9975c40] Setting sso credentials provider to read config from default
+[DEBUG] 2024-03-10 16:50:54.997 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_RELATIVE_URI is 
+[DEBUG] 2024-03-10 16:50:54.997 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_FULL_URI is 
+[DEBUG] 2024-03-10 16:50:54.997 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_EC2_METADATA_DISABLED is 
+[INFO] 2024-03-10 16:50:54.997 InstanceProfileCredentialsProvider [0x1d9975c40] Creating Instance with default EC2MetadataClient and refresh rate 300000
+[INFO] 2024-03-10 16:50:54.997 DefaultAWSCredentialsProviderChain [0x1d9975c40] Added EC2 metadata service credentials provider to the provider chain.
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: default
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: default
+[DEBUG] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTSDE2VQAI
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: test
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: test
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_session_token in the profile: test
+[DEBUG] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key ASIAVXD5NTLTYFVGO2XB
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: wbdev
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: wbdev
+[DEBUG] 2024-03-10 16:50:54.997 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTZIZNGE74
+[INFO] 2024-03-10 16:50:54.997 Aws::Config::AWSProfileConfigLoaderBase [0x1d9975c40] Successfully reloaded configuration.
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:55.001 Aws::Config::AWSConfigFileProfileConfigLoader [0x1d9975c40] Initializing config loader against fileName /Users/oluabe/.aws/credentials and using profilePrefix = 0
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.001 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:55.001 ProfileConfigFileAWSCredentialsProvider [0x1d9975c40] Setting provider to read credentials from /Users/oluabe/.aws/credentials for credentials file and /Users/oluabe/.aws/config for the config file , for use with profile default
+[INFO] 2024-03-10 16:50:55.001 ProcessCredentialsProvider [0x1d9975c40] Setting process credentials provider to read config from default
+[WARN] 2024-03-10 16:50:55.001 STSAssumeRoleWithWebIdentityCredentialsProvider [0x1d9975c40] Token file must be specified to use STS AssumeRole web identity creds provider.
+[INFO] 2024-03-10 16:50:55.001 SSOBearerTokenProvider [0x1d9975c40] Setting sso bearerToken provider to read config from default
+[INFO] 2024-03-10 16:50:55.001 SSOCredentialsProvider [0x1d9975c40] Setting sso credentials provider to read config from default
+[DEBUG] 2024-03-10 16:50:55.001 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_RELATIVE_URI is 
+[DEBUG] 2024-03-10 16:50:55.001 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_FULL_URI is 
+[DEBUG] 2024-03-10 16:50:55.001 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_EC2_METADATA_DISABLED is 
+[INFO] 2024-03-10 16:50:55.001 InstanceProfileCredentialsProvider [0x1d9975c40] Creating Instance with default EC2MetadataClient and refresh rate 300000
+[INFO] 2024-03-10 16:50:55.001 DefaultAWSCredentialsProviderChain [0x1d9975c40] Added EC2 metadata service credentials provider to the provider chain.
+[INFO] 2024-03-10 16:50:55.001 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: default
+[INFO] 2024-03-10 16:50:55.001 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: default
+[DEBUG] 2024-03-10 16:50:55.001 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTSDE2VQAI
+[INFO] 2024-03-10 16:50:55.002 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: test
+[INFO] 2024-03-10 16:50:55.002 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: test
+[INFO] 2024-03-10 16:50:55.002 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_session_token in the profile: test
+[DEBUG] 2024-03-10 16:50:55.002 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key ASIAVXD5NTLTYFVGO2XB
+[INFO] 2024-03-10 16:50:55.002 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: wbdev
+[INFO] 2024-03-10 16:50:55.002 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: wbdev
+[DEBUG] 2024-03-10 16:50:55.002 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTZIZNGE74
+[INFO] 2024-03-10 16:50:55.002 Aws::Config::AWSProfileConfigLoaderBase [0x1d9975c40] Successfully reloaded configuration.
+[INFO] 2024-03-10 16:50:55.002 CurlHandleContainer [0x1d9975c40] Initializing CurlHandleContainer with size 25
+[DEBUG] 2024-03-10 16:50:55.002 Unknown [0x1d9975c40] Resolved endpoint with status 0
+[DEBUG] 2024-03-10 16:50:55.002 Aws::Endpoint::DefaultEndpointProvider [0x1d9975c40] Endpoint rules engine evaluated the endpoint: https://s3.us-east-1.amazonaws.com
+[DEBUG] 2024-03-10 16:50:55.003 AWSAuthV4Signer [0x1d9975c40] Note: Http payloads are not being signed. signPayloads=0 http scheme=https
+[DEBUG] 2024-03-10 16:50:55.003 AWSAuthV4Signer [0x1d9975c40] Canonical Header String: amz-sdk-invocation-id:366C3ADF-2CB5-46D2-B7C4-0E3A8946449F
+amz-sdk-request:attempt=1
+host:s3.us-east-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240310T165055Z
+
+[DEBUG] 2024-03-10 16:50:55.003 AWSAuthV4Signer [0x1d9975c40] Signed Headers value:amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+[DEBUG] 2024-03-10 16:50:55.003 AWSAuthV4Signer [0x1d9975c40] Canonical Request String: GET
+/
+
+amz-sdk-invocation-id:366C3ADF-2CB5-46D2-B7C4-0E3A8946449F
+amz-sdk-request:attempt=1
+host:s3.us-east-1.amazonaws.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20240310T165055Z
+
+amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+[DEBUG] 2024-03-10 16:50:55.003 AWSAuthV4Signer [0x1d9975c40] Final String to sign: AWS4-HMAC-SHA256
+20240310T165055Z
+20240310/us-east-1/s3/aws4_request
+4515d6bd27023de5848ea3c1ad06d3e23182c9253284907db411a370011319e2
+[DEBUG] 2024-03-10 16:50:55.003 AWSAuthV4Signer [0x1d9975c40] Final computed signing hash: be7d1cb2a2641b7c48f2f0f85e1aa0390210fe4d83e764997e0dbe8ffd2ffd2c
+[DEBUG] 2024-03-10 16:50:55.003 AWSAuthV4Signer [0x1d9975c40] Signing request with: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=be7d1cb2a2641b7c48f2f0f85e1aa0390210fe4d83e764997e0dbe8ffd2ffd2c
+[DEBUG] 2024-03-10 16:50:55.003 AWSClient [0x1d9975c40] Request Successfully signed
+[DEBUG] 2024-03-10 16:50:55.003 CurlHandleContainer [0x1d9975c40] Attempting to acquire curl connection.
+[DEBUG] 2024-03-10 16:50:55.003 CurlHandleContainer [0x1d9975c40] No current connections available in pool. Attempting to create new connections.
+[DEBUG] 2024-03-10 16:50:55.003 CurlHandleContainer [0x1d9975c40] attempting to grow pool size by 2
+[INFO] 2024-03-10 16:50:55.003 CurlHandleContainer [0x1d9975c40] Pool grown by 2
+[DEBUG] 2024-03-10 16:50:55.003 CurlHandleContainer [0x1d9975c40] Connection has been released. Continuing.
+[DEBUG] 2024-03-10 16:50:55.003 CurlHandleContainer [0x1d9975c40] Returning connection handle 0x148015e00
+[DEBUG] 2024-03-10 16:50:55.003 CurlHttpClient [0x1d9975c40] Obtained connection handle 0x148015e00
+[DEBUG] 2024-03-10 16:50:55.003 CURL [0x1d9975c40] (Text) WARNING: failed to open cookie file ""
+
+[DEBUG] 2024-03-10 16:50:55.046 CURL [0x1d9975c40] (Text)   Trying 52.216.219.104:443...
+
+[DEBUG] 2024-03-10 16:50:55.088 CURL [0x1d9975c40] (Text) Connected to s3.us-east-1.amazonaws.com (52.216.219.104) port 443
+
+[DEBUG] 2024-03-10 16:50:55.088 CURL [0x1d9975c40] (Text) ALPN: curl offers h2,http/1.1
+
+[DEBUG] 2024-03-10 16:50:55.089 CURL [0x1d9975c40] (Text) (304) (OUT), TLS handshake, Client hello (1):
+
+[DEBUG] 2024-03-10 16:50:55.089 CURL [0x1d9975c40] (SSLDataOut) 327bytes
+[DEBUG] 2024-03-10 16:50:55.096 CURL [0x1d9975c40] (Text)  CAfile: /etc/ssl/cert.pem
+
+[DEBUG] 2024-03-10 16:50:55.096 CURL [0x1d9975c40] (Text)  CApath: none
+
+[DEBUG] 2024-03-10 16:50:55.136 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, Server hello (2):
+
+[DEBUG] 2024-03-10 16:50:55.136 CURL [0x1d9975c40] (SSLDataIn) 106bytes
+[DEBUG] 2024-03-10 16:50:55.137 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Certificate (11):
+
+[DEBUG] 2024-03-10 16:50:55.137 CURL [0x1d9975c40] (SSLDataIn) 5572bytes
+[DEBUG] 2024-03-10 16:50:55.137 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+
+[DEBUG] 2024-03-10 16:50:55.137 CURL [0x1d9975c40] (SSLDataIn) 333bytes
+[DEBUG] 2024-03-10 16:50:55.137 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Server finished (14):
+
+[DEBUG] 2024-03-10 16:50:55.137 CURL [0x1d9975c40] (SSLDataIn) 4bytes
+[DEBUG] 2024-03-10 16:50:55.140 CURL [0x1d9975c40] (Text) TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+
+[DEBUG] 2024-03-10 16:50:55.140 CURL [0x1d9975c40] (SSLDataOut) 70bytes
+[DEBUG] 2024-03-10 16:50:55.140 CURL [0x1d9975c40] (Text) TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+
+[DEBUG] 2024-03-10 16:50:55.140 CURL [0x1d9975c40] (SSLDataOut) 1bytes
+[DEBUG] 2024-03-10 16:50:55.140 CURL [0x1d9975c40] (Text) TLSv1.2 (OUT), TLS handshake, Finished (20):
+
+[DEBUG] 2024-03-10 16:50:55.140 CURL [0x1d9975c40] (SSLDataOut) 16bytes
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS change cipher, Change cipher spec (1):
+
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (SSLDataIn) 1bytes
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Finished (20):
+
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (SSLDataIn) 16bytes
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text) SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text) ALPN: server accepted http/1.1
+
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text) Server certificate:
+
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text)  subject: CN=s3.amazonaws.com
+
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text)  start date: Feb  8 00:00:00 2024 GMT
+
+[DEBUG] 2024-03-10 16:50:55.183 CURL [0x1d9975c40] (Text)  expire date: Jan 11 23:59:59 2025 GMT
+
+[DEBUG] 2024-03-10 16:50:55.184 CURL [0x1d9975c40] (Text)  subjectAltName: host "s3.us-east-1.amazonaws.com" matched cert's "s3.us-east-1.amazonaws.com"
+
+[DEBUG] 2024-03-10 16:50:55.184 CURL [0x1d9975c40] (Text)  issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M01
+
+[DEBUG] 2024-03-10 16:50:55.184 CURL [0x1d9975c40] (Text)  SSL certificate verify ok.
+
+[DEBUG] 2024-03-10 16:50:55.184 CURL [0x1d9975c40] (Text) using HTTP/1.1
+
+[DEBUG] 2024-03-10 16:50:55.184 CURL [0x1d9975c40] (HeaderOut) GET / HTTP/1.1
+Host: s3.us-east-1.amazonaws.com
+Accept: */*
+amz-sdk-invocation-id: 366C3ADF-2CB5-46D2-B7C4-0E3A8946449F
+amz-sdk-request: attempt=1
+authorization: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;host;x-amz-content-sha256;x-amz-date, Signature=be7d1cb2a2641b7c48f2f0f85e1aa0390210fe4d83e764997e0dbe8ffd2ffd2c
+user-agent: aws-sdk-cpp/1.11.201 ua/2.0 md/aws-crt#0.24.3 os/Darwin/23.3.0 md/arch#arm64 lang/c++#C++11 md/Clang#15.0.0 cfg/retry-mode#default api/S3
+x-amz-content-sha256: UNSIGNED-PAYLOAD
+x-amz-date: 20240310T165055Z
+
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) HTTP/1.1 200 OK
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) x-amz-id-2: iGOOs6KHzGreYIvzyQKc4ZSXOay6q0QqzmsML2BL/4azak5Sau/U55V8OadegTVupBaXArWLiyY=
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) x-amz-request-id: CWYB7YW749DDWVRE
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) Date: Sun, 10 Mar 2024 16:50:56 GMT
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) Content-Type: application/xml
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) Transfer-Encoding: chunked
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) Server: AmazonS3
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (HeaderIn) 
+
+[DEBUG] 2024-03-10 16:50:55.254 CURL [0x1d9975c40] (DataIn) 94e
+<?xml version="1.0" encoding="UTF-8"?>
+<ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>7f6f7084653c6fc26ad963f5e0e2a7ae6b7769e13057d429267ed935d754206e</ID><DisplayName>oluabe+introduction</DisplayName></Owner><Buckets><Bucket><Name>api-endpoint-test-bucks-clone</Name><CreationDate>2022-05-10T20:29:08.000Z</CreationDate></Bucket><Bucket><Name>aws-cloudtrail-logs-393252543207-10c04031</Name><CreationDate>2022-04-20T03:23:12.000Z</CreationDate></Bucket><Bucket><Name>calikops-etcd-state-store</Name><CreationDate>2023-04-25T17:24:59.000Z</CreationDate></Bucket><Bucket><Name>calikops-oidc-store</Name><CreationDate>2023-04-25T17:26:47.000Z</CreationDate></Bucket><Bucket><Name>cf-templates-lj8x2k5gymnn-us-east-1</Name><CreationDate>2022-04-20T14:44:15.000Z</CreationDate></Bucket><Bucket><Name>cf-templates-lj8x2k5gymnn-us-east-2</Name><CreationDate>2023-05-02T19:55:48.000Z</CreationDate></Bucket><Bucket><Name>cf-templates-lj8x2k5gymnn-us-west-1</Name><CreationDate>2023-05-02T19:30:51.000Z</CreationDate></Bucket><Bucket><Name>cf-templates-lj8x2k5gymnn-us-west-2</Name><CreationDate>2023-05-02T20:07:39.000Z</CreationDate></Bucket><Bucket><Name>cloudtrail-awslogs-393252543207-0dofea1b-isengard-do-not-delete</Name><CreationDate>2022-04-20T01:00:27.000Z</CreationDate></Bucket><Bucket><Name>do-not-delete-gatedgarden-audit-393252543207</Name><CreationDate>2022-04-20T10:01:04.000Z</CreationDate></Bucket><Bucket><Name>ecsc99xbgdy-bucket</Name><CreationDate>2022-06-17T00:42:55.000Z</CreationDate></Bucket><Bucket><Name>ipamd-bottlerkt-logs</Name><CreationDate>2022-09-01T14:24:20.000Z</CreationDate></Bucket><Bucket><Name>kops-clusters-oidc-store</Name><CreationDate>2023-04-25T15:48:52.000Z</CreationDate></Bucket><Bucket><Name>kops-etcd-state-store</Name><CreationDate>2023-04-25T15:25:16.000Z</CreationDate></Bucket><Bucket><Name>parallelcluster-91864c068f1386ed-v1-do-not-delete</Name><CreationDate>2023-05-19T21:38:34.000Z</CreationDate></Bucket><Bucket><Name>parallelcluster-98dada068111ef03-v1-do-not-delete</Name><CreationDate>2022-09-19T18:59:04.000Z</CreationDate></Bucket><Bucket><Name>s3labtestbucket</Name><CreationDate>2022-04-27T17:09:33.000Z</CreationDate></Bucket><Bucket><Name>sspi-deployment-configbucket-1kfhmezlu39fo</Name><CreationDate>2022-07-27T15:21:10.000Z</CreationDate></Bucket></Buckets></ListAllMyBucketsResult>
+
+[DEBUG] 2024-03-10 16:50:55.255 CURL [0x1d9975c40] (DataIn) 0
+
+
+[DEBUG] 2024-03-10 16:50:55.255 CURL [0x1d9975c40] (Text) Connection #0 to host s3.us-east-1.amazonaws.com left intact
+
+[DEBUG] 2024-03-10 16:50:55.255 CurlHttpClient [0x1d9975c40] Returned http response code 200
+[DEBUG] 2024-03-10 16:50:55.255 CurlHttpClient [0x1d9975c40] Returned content type application/xml
+[DEBUG] 2024-03-10 16:50:55.255 CurlHttpClient [0x1d9975c40] Releasing curl handle 0x148015e00
+[DEBUG] 2024-03-10 16:50:55.255 CurlHandleContainer [0x1d9975c40] Releasing curl handle 0x148015e00
+[DEBUG] 2024-03-10 16:50:55.255 CurlHandleContainer [0x1d9975c40] Notified waiting threads.
+[DEBUG] 2024-03-10 16:50:55.255 AWSClient [0x1d9975c40] Request returned successful response.
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:55.255 Aws::Config::AWSConfigFileProfileConfigLoader [0x1d9975c40] Initializing config loader against fileName /Users/oluabe/.aws/credentials and using profilePrefix = 0
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.255 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:55.255 ProfileConfigFileAWSCredentialsProvider [0x1d9975c40] Setting provider to read credentials from /Users/oluabe/.aws/credentials for credentials file and /Users/oluabe/.aws/config for the config file , for use with profile default
+[INFO] 2024-03-10 16:50:55.255 ProcessCredentialsProvider [0x1d9975c40] Setting process credentials provider to read config from default
+[WARN] 2024-03-10 16:50:55.255 STSAssumeRoleWithWebIdentityCredentialsProvider [0x1d9975c40] Token file must be specified to use STS AssumeRole web identity creds provider.
+[INFO] 2024-03-10 16:50:55.255 SSOBearerTokenProvider [0x1d9975c40] Setting sso bearerToken provider to read config from default
+[INFO] 2024-03-10 16:50:55.255 SSOCredentialsProvider [0x1d9975c40] Setting sso credentials provider to read config from default
+[DEBUG] 2024-03-10 16:50:55.255 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_RELATIVE_URI is 
+[DEBUG] 2024-03-10 16:50:55.255 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_FULL_URI is 
+[DEBUG] 2024-03-10 16:50:55.256 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_EC2_METADATA_DISABLED is 
+[INFO] 2024-03-10 16:50:55.256 InstanceProfileCredentialsProvider [0x1d9975c40] Creating Instance with default EC2MetadataClient and refresh rate 300000
+[INFO] 2024-03-10 16:50:55.256 DefaultAWSCredentialsProviderChain [0x1d9975c40] Added EC2 metadata service credentials provider to the provider chain.
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: default
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: default
+[DEBUG] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTSDE2VQAI
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: test
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: test
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_session_token in the profile: test
+[DEBUG] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key ASIAVXD5NTLTYFVGO2XB
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: wbdev
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: wbdev
+[DEBUG] 2024-03-10 16:50:55.256 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTZIZNGE74
+[INFO] 2024-03-10 16:50:55.256 Aws::Config::AWSProfileConfigLoaderBase [0x1d9975c40] Successfully reloaded configuration.
+[INFO] 2024-03-10 16:50:55.256 CurlHandleContainer [0x1d9975c40] Initializing CurlHandleContainer with size 25
+[DEBUG] 2024-03-10 16:50:55.257 Unknown [0x1d9975c40] Resolved endpoint with status 0
+[DEBUG] 2024-03-10 16:50:55.257 Aws::Endpoint::DefaultEndpointProvider [0x1d9975c40] Endpoint rules engine evaluated the endpoint: https://sts.us-east-1.amazonaws.com
+[DEBUG] 2024-03-10 16:50:55.257 AWSAuthV4Signer [0x1d9975c40] Calculated sha256 ab821ae955788b0e33ebd34c208442ccfc2d406e2edc5e7a39bd6458fbb4f843 for payload.
+[DEBUG] 2024-03-10 16:50:55.257 AWSAuthV4Signer [0x1d9975c40] Canonical Header String: amz-sdk-invocation-id:4D28B82D-B089-43B3-8A45-CCA51AA4F5E1
+amz-sdk-request:attempt=1
+content-length:43
+content-type:application/x-www-form-urlencoded
+host:sts.us-east-1.amazonaws.com
+x-amz-api-version:2011-06-15
+x-amz-content-sha256:ab821ae955788b0e33ebd34c208442ccfc2d406e2edc5e7a39bd6458fbb4f843
+x-amz-date:20240310T165055Z
+
+[DEBUG] 2024-03-10 16:50:55.257 AWSAuthV4Signer [0x1d9975c40] Signed Headers value:amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-api-version;x-amz-content-sha256;x-amz-date
+[DEBUG] 2024-03-10 16:50:55.257 AWSAuthV4Signer [0x1d9975c40] Canonical Request String: POST
+/
+
+amz-sdk-invocation-id:4D28B82D-B089-43B3-8A45-CCA51AA4F5E1
+amz-sdk-request:attempt=1
+content-length:43
+content-type:application/x-www-form-urlencoded
+host:sts.us-east-1.amazonaws.com
+x-amz-api-version:2011-06-15
+x-amz-content-sha256:ab821ae955788b0e33ebd34c208442ccfc2d406e2edc5e7a39bd6458fbb4f843
+x-amz-date:20240310T165055Z
+
+amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-api-version;x-amz-content-sha256;x-amz-date
+ab821ae955788b0e33ebd34c208442ccfc2d406e2edc5e7a39bd6458fbb4f843
+[DEBUG] 2024-03-10 16:50:55.257 AWSAuthV4Signer [0x1d9975c40] Final String to sign: AWS4-HMAC-SHA256
+20240310T165055Z
+20240310/us-east-1/sts/aws4_request
+8c6ba8732eb9aeeb542d6908c82c9b9f25697fc77d476dff8fc2d432ab822e52
+[DEBUG] 2024-03-10 16:50:55.257 AWSAuthV4Signer [0x1d9975c40] Final computed signing hash: aac44a18b9c99727cfb5b80d585a3eb68a319ae5016e6385ff19926175c5a5db
+[DEBUG] 2024-03-10 16:50:55.257 AWSAuthV4Signer [0x1d9975c40] Signing request with: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=aac44a18b9c99727cfb5b80d585a3eb68a319ae5016e6385ff19926175c5a5db
+[DEBUG] 2024-03-10 16:50:55.257 AWSClient [0x1d9975c40] Request Successfully signed
+[DEBUG] 2024-03-10 16:50:55.257 CurlHandleContainer [0x1d9975c40] Attempting to acquire curl connection.
+[DEBUG] 2024-03-10 16:50:55.257 CurlHandleContainer [0x1d9975c40] No current connections available in pool. Attempting to create new connections.
+[DEBUG] 2024-03-10 16:50:55.257 CurlHandleContainer [0x1d9975c40] attempting to grow pool size by 2
+[INFO] 2024-03-10 16:50:55.257 CurlHandleContainer [0x1d9975c40] Pool grown by 2
+[DEBUG] 2024-03-10 16:50:55.257 CurlHandleContainer [0x1d9975c40] Connection has been released. Continuing.
+[DEBUG] 2024-03-10 16:50:55.257 CurlHandleContainer [0x1d9975c40] Returning connection handle 0x150017800
+[DEBUG] 2024-03-10 16:50:55.257 CurlHttpClient [0x1d9975c40] Obtained connection handle 0x150017800
+[DEBUG] 2024-03-10 16:50:55.257 CURL [0x1d9975c40] (Text) WARNING: failed to open cookie file ""
+
+[DEBUG] 2024-03-10 16:50:55.300 CURL [0x1d9975c40] (Text)   Trying 67.220.244.223:443...
+
+[DEBUG] 2024-03-10 16:50:55.341 CURL [0x1d9975c40] (Text) Connected to sts.us-east-1.amazonaws.com (67.220.244.223) port 443
+
+[DEBUG] 2024-03-10 16:50:55.341 CURL [0x1d9975c40] (Text) ALPN: curl offers h2,http/1.1
+
+[DEBUG] 2024-03-10 16:50:55.341 CURL [0x1d9975c40] (Text) (304) (OUT), TLS handshake, Client hello (1):
+
+[DEBUG] 2024-03-10 16:50:55.341 CURL [0x1d9975c40] (SSLDataOut) 328bytes
+[DEBUG] 2024-03-10 16:50:55.348 CURL [0x1d9975c40] (Text)  CAfile: /etc/ssl/cert.pem
+
+[DEBUG] 2024-03-10 16:50:55.348 CURL [0x1d9975c40] (Text)  CApath: none
+
+[DEBUG] 2024-03-10 16:50:55.386 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, Server hello (2):
+
+[DEBUG] 2024-03-10 16:50:55.386 CURL [0x1d9975c40] (SSLDataIn) 88bytes
+[DEBUG] 2024-03-10 16:50:55.389 CURL [0x1d9975c40] (Text) (304) (OUT), TLS handshake, Client hello (1):
+
+[DEBUG] 2024-03-10 16:50:55.389 CURL [0x1d9975c40] (SSLDataOut) 361bytes
+[DEBUG] 2024-03-10 16:50:55.432 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, Server hello (2):
+
+[DEBUG] 2024-03-10 16:50:55.432 CURL [0x1d9975c40] (SSLDataIn) 155bytes
+[DEBUG] 2024-03-10 16:50:55.439 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, Unknown (8):
+
+[DEBUG] 2024-03-10 16:50:55.439 CURL [0x1d9975c40] (SSLDataIn) 25bytes
+[DEBUG] 2024-03-10 16:50:55.439 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, Certificate (11):
+
+[DEBUG] 2024-03-10 16:50:55.439 CURL [0x1d9975c40] (SSLDataIn) 5037bytes
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, CERT verify (15):
+
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (SSLDataIn) 264bytes
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, Finished (20):
+
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (SSLDataIn) 36bytes
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (Text) (304) (OUT), TLS handshake, Finished (20):
+
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (SSLDataOut) 36bytes
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (Text) SSL connection using TLSv1.3 / AEAD-AES128-GCM-SHA256
+
+[DEBUG] 2024-03-10 16:50:55.440 CURL [0x1d9975c40] (Text) ALPN: server accepted http/1.1
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text) Server certificate:
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text)  subject: CN=sts.us-east-1.amazonaws.com
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text)  start date: Jan 18 00:00:00 2024 GMT
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text)  expire date: Dec 31 23:59:59 2024 GMT
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text)  subjectAltName: host "sts.us-east-1.amazonaws.com" matched cert's "sts.us-east-1.amazonaws.com"
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text)  issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M01
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text)  SSL certificate verify ok.
+
+[DEBUG] 2024-03-10 16:50:55.441 CURL [0x1d9975c40] (Text) using HTTP/1.1
+
+[DEBUG] 2024-03-10 16:50:55.442 CURL [0x1d9975c40] (HeaderOut) POST / HTTP/1.1
+Host: sts.us-east-1.amazonaws.com
+Accept: */*
+amz-sdk-invocation-id: 4D28B82D-B089-43B3-8A45-CCA51AA4F5E1
+amz-sdk-request: attempt=1
+authorization: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/sts/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=aac44a18b9c99727cfb5b80d585a3eb68a319ae5016e6385ff19926175c5a5db
+content-length: 43
+content-type: application/x-www-form-urlencoded
+user-agent: aws-sdk-cpp/1.11.201 ua/2.0 md/aws-crt#0.24.3 os/Darwin/23.3.0 md/arch#arm64 lang/c++#C++11 md/Clang#15.0.0 cfg/retry-mode#default api/STS
+x-amz-api-version: 2011-06-15
+x-amz-content-sha256: ab821ae955788b0e33ebd34c208442ccfc2d406e2edc5e7a39bd6458fbb4f843
+x-amz-date: 20240310T165055Z
+Expect: 100-continue
+
+
+[DEBUG] 2024-03-10 16:50:55.486 CURL [0x1d9975c40] (HeaderIn) HTTP/1.1 100 
+
+[DEBUG] 2024-03-10 16:50:55.486 CURL [0x1d9975c40] (DataOut) Action=GetCallerIdentity&Version=2011-06-15
+[DEBUG] 2024-03-10 16:50:55.539 CURL [0x1d9975c40] (HeaderIn) HTTP/1.1 200 OK
+
+[DEBUG] 2024-03-10 16:50:55.540 CURL [0x1d9975c40] (HeaderIn) x-amzn-RequestId: 2d061de5-ead6-4b26-b76d-f92041e7f930
+
+[DEBUG] 2024-03-10 16:50:55.540 CURL [0x1d9975c40] (HeaderIn) Content-Type: text/xml
+
+[DEBUG] 2024-03-10 16:50:55.540 CURL [0x1d9975c40] (HeaderIn) Content-Length: 416
+
+[DEBUG] 2024-03-10 16:50:55.540 CURL [0x1d9975c40] (HeaderIn) Date: Sun, 10 Mar 2024 16:50:54 GMT
+
+[DEBUG] 2024-03-10 16:50:55.540 CURL [0x1d9975c40] (HeaderIn) 
+
+[DEBUG] 2024-03-10 16:50:55.540 CURL [0x1d9975c40] (DataIn) <GetCallerIdentityResponse xmlns="https://sts.amazonaws.com/doc/2011-06-15/">
+  <GetCallerIdentityResult>
+    <Arn>arn:aws:iam::393252543207:user/LumberAdministrator</Arn>
+    <UserId>AIDAVXD5NTLT5QOE5QUDI</UserId>
+    <Account>393252543207</Account>
+  </GetCallerIdentityResult>
+  <ResponseMetadata>
+    <RequestId>2d061de5-ead6-4b26-b76d-f92041e7f930</RequestId>
+  </ResponseMetadata>
+</GetCallerIdentityResponse>
+
+[DEBUG] 2024-03-10 16:50:55.540 CURL [0x1d9975c40] (Text) Connection #0 to host sts.us-east-1.amazonaws.com left intact
+
+[DEBUG] 2024-03-10 16:50:55.540 CurlHttpClient [0x1d9975c40] Returned http response code 200
+[DEBUG] 2024-03-10 16:50:55.540 CurlHttpClient [0x1d9975c40] Returned content type text/xml
+[DEBUG] 2024-03-10 16:50:55.540 CurlHttpClient [0x1d9975c40] Releasing curl handle 0x150017800
+[DEBUG] 2024-03-10 16:50:55.540 CurlHandleContainer [0x1d9975c40] Releasing curl handle 0x150017800
+[DEBUG] 2024-03-10 16:50:55.540 CurlHandleContainer [0x1d9975c40] Notified waiting threads.
+[DEBUG] 2024-03-10 16:50:55.540 AWSClient [0x1d9975c40] Request returned successful response.
+[DEBUG] 2024-03-10 16:50:55.541 Aws::STS::Model::GetCallerIdentityResult [0x1d9975c40] x-amzn-request-id: 2d061de5-ead6-4b26-b76d-f92041e7f930
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:55.541 Aws::Config::AWSConfigFileProfileConfigLoader [0x1d9975c40] Initializing config loader against fileName /Users/oluabe/.aws/credentials and using profilePrefix = 0
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Environment value for variable HOME is /Users/oluabe
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Home directory is missing the final / appending one to normalize
+[DEBUG] 2024-03-10 16:50:55.541 FileSystemUtils [0x1d9975c40] Final Home Directory is /Users/oluabe/
+[INFO] 2024-03-10 16:50:55.541 ProfileConfigFileAWSCredentialsProvider [0x1d9975c40] Setting provider to read credentials from /Users/oluabe/.aws/credentials for credentials file and /Users/oluabe/.aws/config for the config file , for use with profile default
+[INFO] 2024-03-10 16:50:55.541 ProcessCredentialsProvider [0x1d9975c40] Setting process credentials provider to read config from default
+[WARN] 2024-03-10 16:50:55.541 STSAssumeRoleWithWebIdentityCredentialsProvider [0x1d9975c40] Token file must be specified to use STS AssumeRole web identity creds provider.
+[INFO] 2024-03-10 16:50:55.541 SSOBearerTokenProvider [0x1d9975c40] Setting sso bearerToken provider to read config from default
+[INFO] 2024-03-10 16:50:55.541 SSOCredentialsProvider [0x1d9975c40] Setting sso credentials provider to read config from default
+[DEBUG] 2024-03-10 16:50:55.541 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_RELATIVE_URI is 
+[DEBUG] 2024-03-10 16:50:55.541 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_CONTAINER_CREDENTIALS_FULL_URI is 
+[DEBUG] 2024-03-10 16:50:55.541 DefaultAWSCredentialsProviderChain [0x1d9975c40] The environment variable value AWS_EC2_METADATA_DISABLED is 
+[INFO] 2024-03-10 16:50:55.541 InstanceProfileCredentialsProvider [0x1d9975c40] Creating Instance with default EC2MetadataClient and refresh rate 300000
+[INFO] 2024-03-10 16:50:55.541 DefaultAWSCredentialsProviderChain [0x1d9975c40] Added EC2 metadata service credentials provider to the provider chain.
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: default
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: default
+[DEBUG] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTSDE2VQAI
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: test
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: test
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_session_token in the profile: test
+[DEBUG] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key ASIAVXD5NTLTYFVGO2XB
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_access_key_id in the profile: wbdev
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] Unknown property: aws_secret_access_key in the profile: wbdev
+[DEBUG] 2024-03-10 16:50:55.542 Aws::Config::ConfigFileProfileFSM [0x1d9975c40] found access key AKIAVXD5NTLTZIZNGE74
+[INFO] 2024-03-10 16:50:55.542 Aws::Config::AWSProfileConfigLoaderBase [0x1d9975c40] Successfully reloaded configuration.
+[INFO] 2024-03-10 16:50:55.542 CurlHandleContainer [0x1d9975c40] Initializing CurlHandleContainer with size 25
+[DEBUG] 2024-03-10 16:50:55.546 Unknown [0x1d9975c40] Resolved endpoint with status 0
+[DEBUG] 2024-03-10 16:50:55.546 Aws::Endpoint::DefaultEndpointProvider [0x1d9975c40] Endpoint rules engine evaluated the endpoint: https://393252543207.s3-control.us-east-1.amazonaws.com
+[DEBUG] 2024-03-10 16:50:55.546 AWSAuthV4Signer [0x1d9975c40] Using cached empty string sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 because payload is empty.
+[DEBUG] 2024-03-10 16:50:55.546 AWSAuthV4Signer [0x1d9975c40] Canonical Header String: amz-sdk-invocation-id:7346A431-65EF-458F-9EC3-5D6629D828CC
+amz-sdk-request:attempt=1
+content-type:application/xml
+host:393252543207.s3-control.us-east-1.amazonaws.com
+x-amz-account-id:393252543207
+x-amz-api-version:2018-08-20
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20240310T165055Z
+
+[DEBUG] 2024-03-10 16:50:55.546 AWSAuthV4Signer [0x1d9975c40] Signed Headers value:amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date
+[DEBUG] 2024-03-10 16:50:55.546 AWSAuthV4Signer [0x1d9975c40] Canonical Request String: GET
+/v20180820/configuration/publicAccessBlock
+
+amz-sdk-invocation-id:7346A431-65EF-458F-9EC3-5D6629D828CC
+amz-sdk-request:attempt=1
+content-type:application/xml
+host:393252543207.s3-control.us-east-1.amazonaws.com
+x-amz-account-id:393252543207
+x-amz-api-version:2018-08-20
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20240310T165055Z
+
+amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[DEBUG] 2024-03-10 16:50:55.546 AWSAuthV4Signer [0x1d9975c40] Final String to sign: AWS4-HMAC-SHA256
+20240310T165055Z
+20240310/us-east-1/s3/aws4_request
+2f7d9e14ffc5ce35c623cee0fe248fd067a200374a15815e0b67d659146deebb
+[DEBUG] 2024-03-10 16:50:55.546 AWSAuthV4Signer [0x1d9975c40] Final computed signing hash: 3f8951edbcca73966ba2c8a549c9716783a93802b1f2f2880e672ff0d6b0e1a2
+[DEBUG] 2024-03-10 16:50:55.546 AWSAuthV4Signer [0x1d9975c40] Signing request with: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=3f8951edbcca73966ba2c8a549c9716783a93802b1f2f2880e672ff0d6b0e1a2
+[DEBUG] 2024-03-10 16:50:55.546 AWSClient [0x1d9975c40] Request Successfully signed
+[DEBUG] 2024-03-10 16:50:55.546 CurlHandleContainer [0x1d9975c40] Attempting to acquire curl connection.
+[DEBUG] 2024-03-10 16:50:55.546 CurlHandleContainer [0x1d9975c40] No current connections available in pool. Attempting to create new connections.
+[DEBUG] 2024-03-10 16:50:55.546 CurlHandleContainer [0x1d9975c40] attempting to grow pool size by 2
+[INFO] 2024-03-10 16:50:55.546 CurlHandleContainer [0x1d9975c40] Pool grown by 2
+[DEBUG] 2024-03-10 16:50:55.546 CurlHandleContainer [0x1d9975c40] Connection has been released. Continuing.
+[DEBUG] 2024-03-10 16:50:55.546 CurlHandleContainer [0x1d9975c40] Returning connection handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:55.546 CurlHttpClient [0x1d9975c40] Obtained connection handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:55.546 CURL [0x1d9975c40] (Text) WARNING: failed to open cookie file ""
+
+[DEBUG] 2024-03-10 16:50:55.651 CURL [0x1d9975c40] (Text)   Trying 52.216.185.47:443...
+
+[DEBUG] 2024-03-10 16:50:55.693 CURL [0x1d9975c40] (Text) Connected to 393252543207.s3-control.us-east-1.amazonaws.com (52.216.185.47) port 443
+
+[DEBUG] 2024-03-10 16:50:55.693 CURL [0x1d9975c40] (Text) ALPN: curl offers h2,http/1.1
+
+[DEBUG] 2024-03-10 16:50:55.693 CURL [0x1d9975c40] (Text) (304) (OUT), TLS handshake, Client hello (1):
+
+[DEBUG] 2024-03-10 16:50:55.693 CURL [0x1d9975c40] (SSLDataOut) 348bytes
+[DEBUG] 2024-03-10 16:50:55.698 CURL [0x1d9975c40] (Text)  CAfile: /etc/ssl/cert.pem
+
+[DEBUG] 2024-03-10 16:50:55.698 CURL [0x1d9975c40] (Text)  CApath: none
+
+[DEBUG] 2024-03-10 16:50:55.741 CURL [0x1d9975c40] (Text) (304) (IN), TLS handshake, Server hello (2):
+
+[DEBUG] 2024-03-10 16:50:55.741 CURL [0x1d9975c40] (SSLDataIn) 106bytes
+[DEBUG] 2024-03-10 16:50:55.741 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Certificate (11):
+
+[DEBUG] 2024-03-10 16:50:55.741 CURL [0x1d9975c40] (SSLDataIn) 5572bytes
+[DEBUG] 2024-03-10 16:50:55.743 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+
+[DEBUG] 2024-03-10 16:50:55.743 CURL [0x1d9975c40] (SSLDataIn) 333bytes
+[DEBUG] 2024-03-10 16:50:55.743 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Server finished (14):
+
+[DEBUG] 2024-03-10 16:50:55.743 CURL [0x1d9975c40] (SSLDataIn) 4bytes
+[DEBUG] 2024-03-10 16:50:55.749 CURL [0x1d9975c40] (Text) TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+
+[DEBUG] 2024-03-10 16:50:55.749 CURL [0x1d9975c40] (SSLDataOut) 70bytes
+[DEBUG] 2024-03-10 16:50:55.749 CURL [0x1d9975c40] (Text) TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+
+[DEBUG] 2024-03-10 16:50:55.749 CURL [0x1d9975c40] (SSLDataOut) 1bytes
+[DEBUG] 2024-03-10 16:50:55.750 CURL [0x1d9975c40] (Text) TLSv1.2 (OUT), TLS handshake, Finished (20):
+
+[DEBUG] 2024-03-10 16:50:55.750 CURL [0x1d9975c40] (SSLDataOut) 16bytes
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS change cipher, Change cipher spec (1):
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (SSLDataIn) 1bytes
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text) TLSv1.2 (IN), TLS handshake, Finished (20):
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (SSLDataIn) 16bytes
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text) SSL connection using TLSv1.2 / ECDHE-RSA-AES128-GCM-SHA256
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text) ALPN: server accepted http/1.1
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text) Server certificate:
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text)  subject: CN=s3.amazonaws.com
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text)  start date: Feb  8 00:00:00 2024 GMT
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text)  expire date: Jan 11 23:59:59 2025 GMT
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text)  subjectAltName: host "393252543207.s3-control.us-east-1.amazonaws.com" matched cert's "*.s3-control.us-east-1.amazonaws.com"
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text)  issuer: C=US; O=Amazon; CN=Amazon RSA 2048 M01
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text)  SSL certificate verify ok.
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (Text) using HTTP/1.1
+
+[DEBUG] 2024-03-10 16:50:55.795 CURL [0x1d9975c40] (HeaderOut) GET /v20180820/configuration/publicAccessBlock HTTP/1.1
+Host: 393252543207.s3-control.us-east-1.amazonaws.com
+Accept: */*
+amz-sdk-invocation-id: 7346A431-65EF-458F-9EC3-5D6629D828CC
+amz-sdk-request: attempt=1
+authorization: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=3f8951edbcca73966ba2c8a549c9716783a93802b1f2f2880e672ff0d6b0e1a2
+content-type: application/xml
+user-agent: aws-sdk-cpp/1.11.201 ua/2.0 md/aws-crt#0.24.3 os/Darwin/23.3.0 md/arch#arm64 lang/c++#C++11 md/Clang#15.0.0 cfg/retry-mode#default api/S3_Control
+x-amz-account-id: 393252543207
+x-amz-api-version: 2018-08-20
+x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date: 20240310T165055Z
+
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (HeaderIn) HTTP/1.1 200 OK
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (HeaderIn) x-amz-id-2: qQKss4zx7nIe1b5r2dKAq2wKIWHlAXDp3OXkalQR4O03FK/Sz/fBLM+e+OWwNeArHHGjUQmp4bk=
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (HeaderIn) x-amz-request-id: CWYE9JCH17GD7W6Z
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (HeaderIn) Date: Sun, 10 Mar 2024 16:50:56 GMT
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (HeaderIn) Transfer-Encoding: chunked
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (HeaderIn) Server: AmazonS3
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (HeaderIn) 
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (DataIn) 150
+<?xml version="1.0" encoding="UTF-8"?>
+<PublicAccessBlockConfiguration xmlns="http://awss3control.amazonaws.com/doc/2018-08-20/"><BlockPublicAcls>true</BlockPublicAcls><IgnorePublicAcls>true</IgnorePublicAcls><BlockPublicPolicy>true</BlockPublicPolicy><RestrictPublicBuckets>true</RestrictPublicBuckets></PublicAccessBlockConfiguration>
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (DataIn) 0
+
+
+[DEBUG] 2024-03-10 16:50:55.858 CURL [0x1d9975c40] (Text) Connection #0 to host 393252543207.s3-control.us-east-1.amazonaws.com left intact
+
+[DEBUG] 2024-03-10 16:50:55.858 CurlHttpClient [0x1d9975c40] Returned http response code 200
+[DEBUG] 2024-03-10 16:50:55.858 CurlHttpClient [0x1d9975c40] Releasing curl handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:55.859 CurlHandleContainer [0x1d9975c40] Releasing curl handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:55.859 CurlHandleContainer [0x1d9975c40] Notified waiting threads.
+[DEBUG] 2024-03-10 16:50:55.859 AWSClient [0x1d9975c40] Request returned successful response.
+[DEBUG] 2024-03-10 16:50:55.860 Unknown [0x1d9975c40] Resolved endpoint with status 0
+[DEBUG] 2024-03-10 16:50:55.860 Aws::Endpoint::DefaultEndpointProvider [0x1d9975c40] Endpoint rules engine evaluated the endpoint: https://393252543207.s3-control.us-east-1.amazonaws.com
+[DEBUG] 2024-03-10 16:50:55.860 AWSAuthV4Signer [0x1d9975c40] Calculated sha256 e85d2807195f21752c3193c58a6bb071a79002472f2cd1abaa6e09e5aa251060 for payload.
+[DEBUG] 2024-03-10 16:50:55.861 AWSAuthV4Signer [0x1d9975c40] Canonical Header String: amz-sdk-invocation-id:6FFAD9C1-6844-436D-918A-376ADF4F9607
+amz-sdk-request:attempt=1
+content-length:345
+content-type:application/xml
+host:393252543207.s3-control.us-east-1.amazonaws.com
+x-amz-account-id:393252543207
+x-amz-api-version:2018-08-20
+x-amz-content-sha256:e85d2807195f21752c3193c58a6bb071a79002472f2cd1abaa6e09e5aa251060
+x-amz-date:20240310T165055Z
+
+[DEBUG] 2024-03-10 16:50:55.861 AWSAuthV4Signer [0x1d9975c40] Signed Headers value:amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date
+[DEBUG] 2024-03-10 16:50:55.861 AWSAuthV4Signer [0x1d9975c40] Canonical Request String: PUT
+/v20180820/configuration/publicAccessBlock
+
+amz-sdk-invocation-id:6FFAD9C1-6844-436D-918A-376ADF4F9607
+amz-sdk-request:attempt=1
+content-length:345
+content-type:application/xml
+host:393252543207.s3-control.us-east-1.amazonaws.com
+x-amz-account-id:393252543207
+x-amz-api-version:2018-08-20
+x-amz-content-sha256:e85d2807195f21752c3193c58a6bb071a79002472f2cd1abaa6e09e5aa251060
+x-amz-date:20240310T165055Z
+
+amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date
+e85d2807195f21752c3193c58a6bb071a79002472f2cd1abaa6e09e5aa251060
+[DEBUG] 2024-03-10 16:50:55.861 AWSAuthV4Signer [0x1d9975c40] Final String to sign: AWS4-HMAC-SHA256
+20240310T165055Z
+20240310/us-east-1/s3/aws4_request
+719b15c41acba0e28ac376f863c90cd06f5858206901e85fce9fd5064d487361
+[DEBUG] 2024-03-10 16:50:55.861 AWSAuthV4Signer [0x1d9975c40] Final computed signing hash: 3e29a2c08a848d635ab84cc5c19c1aca4f829b62a9d3de59d09d4ff0e7b31e83
+[DEBUG] 2024-03-10 16:50:55.861 AWSAuthV4Signer [0x1d9975c40] Signing request with: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=3e29a2c08a848d635ab84cc5c19c1aca4f829b62a9d3de59d09d4ff0e7b31e83
+[DEBUG] 2024-03-10 16:50:55.861 AWSClient [0x1d9975c40] Request Successfully signed
+[DEBUG] 2024-03-10 16:50:55.861 CurlHandleContainer [0x1d9975c40] Attempting to acquire curl connection.
+[DEBUG] 2024-03-10 16:50:55.861 CurlHandleContainer [0x1d9975c40] Connection has been released. Continuing.
+[DEBUG] 2024-03-10 16:50:55.861 CurlHandleContainer [0x1d9975c40] Returning connection handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:55.861 CurlHttpClient [0x1d9975c40] Obtained connection handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:55.861 CURL [0x1d9975c40] (Text) WARNING: failed to open cookie file ""
+
+[DEBUG] 2024-03-10 16:50:55.861 CURL [0x1d9975c40] (Text) Found bundle for host: 0x13ff2aea0 [serially]
+
+[DEBUG] 2024-03-10 16:50:55.861 CURL [0x1d9975c40] (Text) Can not multiplex, even if we wanted to
+
+[DEBUG] 2024-03-10 16:50:55.861 CURL [0x1d9975c40] (Text) Re-using existing connection with host 393252543207.s3-control.us-east-1.amazonaws.com
+
+[DEBUG] 2024-03-10 16:50:55.862 CURL [0x1d9975c40] (HeaderOut) PUT /v20180820/configuration/publicAccessBlock HTTP/1.1
+Host: 393252543207.s3-control.us-east-1.amazonaws.com
+Accept: */*
+amz-sdk-invocation-id: 6FFAD9C1-6844-436D-918A-376ADF4F9607
+amz-sdk-request: attempt=1
+authorization: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=3e29a2c08a848d635ab84cc5c19c1aca4f829b62a9d3de59d09d4ff0e7b31e83
+content-length: 345
+content-type: application/xml
+user-agent: aws-sdk-cpp/1.11.201 ua/2.0 md/aws-crt#0.24.3 os/Darwin/23.3.0 md/arch#arm64 lang/c++#C++11 md/Clang#15.0.0 cfg/retry-mode#default api/S3_Control
+x-amz-account-id: 393252543207
+x-amz-api-version: 2018-08-20
+x-amz-content-sha256: e85d2807195f21752c3193c58a6bb071a79002472f2cd1abaa6e09e5aa251060
+x-amz-date: 20240310T165055Z
+Expect: 100-continue
+
+
+[DEBUG] 2024-03-10 16:50:55.908 CURL [0x1d9975c40] (HeaderIn) HTTP/1.1 100 Continue
+
+[DEBUG] 2024-03-10 16:50:55.908 CURL [0x1d9975c40] (DataOut) <?xml version="1.0"?>
+<PublicAccessBlockConfiguration xmlns="http://awss3control.amazonaws.com/doc/2018-08-20/">
+    <BlockPublicAcls>false</BlockPublicAcls>
+    <IgnorePublicAcls>false</IgnorePublicAcls>
+    <BlockPublicPolicy>false</BlockPublicPolicy>
+    <RestrictPublicBuckets>false</RestrictPublicBuckets>
+</PublicAccessBlockConfiguration>
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (HeaderIn) HTTP/1.1 200 OK
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (HeaderIn) x-amz-id-2: o1TAVCBL54yPhWSCNzn/zdRVHeFwLudBDzKWQmlmLbd2OeUrxhikiTLYPq/AZXhPemYNA1s7ezw=
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (HeaderIn) x-amz-request-id: CWY5PV8GC9KXW9TX
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (HeaderIn) Date: Sun, 10 Mar 2024 16:50:56 GMT
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (HeaderIn) Server: AmazonS3
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (HeaderIn) Content-Length: 0
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (HeaderIn) 
+
+[DEBUG] 2024-03-10 16:50:56.031 CURL [0x1d9975c40] (Text) Connection #0 to host 393252543207.s3-control.us-east-1.amazonaws.com left intact
+
+[DEBUG] 2024-03-10 16:50:56.031 CurlHttpClient [0x1d9975c40] Returned http response code 200
+[DEBUG] 2024-03-10 16:50:56.031 CurlHttpClient [0x1d9975c40] Releasing curl handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:56.031 CurlHandleContainer [0x1d9975c40] Releasing curl handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:56.031 CurlHandleContainer [0x1d9975c40] Notified waiting threads.
+[DEBUG] 2024-03-10 16:50:56.031 AWSClient [0x1d9975c40] Request returned successful response.
+[DEBUG] 2024-03-10 16:50:56.031 Unknown [0x16d593000] Resolved endpoint with status 0
+[DEBUG] 2024-03-10 16:50:56.031 Aws::Endpoint::DefaultEndpointProvider [0x16d593000] Endpoint rules engine evaluated the endpoint: https://393252543207.s3-control.us-east-1.amazonaws.com
+[DEBUG] 2024-03-10 16:50:56.031 AWSAuthV4Signer [0x16d593000] Using cached empty string sha256 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 because payload is empty.
+[DEBUG] 2024-03-10 16:50:56.031 AWSAuthV4Signer [0x16d593000] Canonical Header String: amz-sdk-invocation-id:02FA889C-1CDC-41C7-954A-1B952C30BE0E
+amz-sdk-request:attempt=1
+content-type:application/xml
+host:393252543207.s3-control.us-east-1.amazonaws.com
+x-amz-account-id:393252543207
+x-amz-api-version:2018-08-20
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20240310T165056Z
+
+[DEBUG] 2024-03-10 16:50:56.031 AWSAuthV4Signer [0x16d593000] Signed Headers value:amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date
+[DEBUG] 2024-03-10 16:50:56.032 AWSAuthV4Signer [0x16d593000] Canonical Request String: GET
+/v20180820/configuration/publicAccessBlock
+
+amz-sdk-invocation-id:02FA889C-1CDC-41C7-954A-1B952C30BE0E
+amz-sdk-request:attempt=1
+content-type:application/xml
+host:393252543207.s3-control.us-east-1.amazonaws.com
+x-amz-account-id:393252543207
+x-amz-api-version:2018-08-20
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20240310T165056Z
+
+amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[DEBUG] 2024-03-10 16:50:56.032 AWSAuthV4Signer [0x16d593000] Final String to sign: AWS4-HMAC-SHA256
+20240310T165056Z
+20240310/us-east-1/s3/aws4_request
+25e7e784bb33900ab269aeaca21ddd905fc0640223601ddb301ef0105f66c922
+[DEBUG] 2024-03-10 16:50:56.032 AWSAuthV4Signer [0x16d593000] Final computed signing hash: f72a7f621833eff3dcb47712242a21217304096538bc3e525da7065f6ac727bb
+[DEBUG] 2024-03-10 16:50:56.032 AWSAuthV4Signer [0x16d593000] Signing request with: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=f72a7f621833eff3dcb47712242a21217304096538bc3e525da7065f6ac727bb
+[DEBUG] 2024-03-10 16:50:56.032 AWSClient [0x16d593000] Request Successfully signed
+[DEBUG] 2024-03-10 16:50:56.032 CurlHandleContainer [0x16d593000] Attempting to acquire curl connection.
+[DEBUG] 2024-03-10 16:50:56.032 CurlHandleContainer [0x16d593000] Connection has been released. Continuing.
+[DEBUG] 2024-03-10 16:50:56.032 CurlHandleContainer [0x16d593000] Returning connection handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:56.032 CurlHttpClient [0x16d593000] Obtained connection handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:56.032 CURL [0x16d593000] (Text) WARNING: failed to open cookie file ""
+
+[DEBUG] 2024-03-10 16:50:56.032 CURL [0x16d593000] (Text) Found bundle for host: 0x13ff2aea0 [serially]
+
+[DEBUG] 2024-03-10 16:50:56.032 CURL [0x16d593000] (Text) Can not multiplex, even if we wanted to
+
+[DEBUG] 2024-03-10 16:50:56.032 CURL [0x16d593000] (Text) Re-using existing connection with host 393252543207.s3-control.us-east-1.amazonaws.com
+
+[DEBUG] 2024-03-10 16:50:56.032 CURL [0x16d593000] (HeaderOut) GET /v20180820/configuration/publicAccessBlock HTTP/1.1
+Host: 393252543207.s3-control.us-east-1.amazonaws.com
+Accept: */*
+amz-sdk-invocation-id: 02FA889C-1CDC-41C7-954A-1B952C30BE0E
+amz-sdk-request: attempt=1
+authorization: AWS4-HMAC-SHA256 Credential=AKIAVXD5NTLTSDE2VQAI/20240310/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-type;host;x-amz-account-id;x-amz-api-version;x-amz-content-sha256;x-amz-date, Signature=f72a7f621833eff3dcb47712242a21217304096538bc3e525da7065f6ac727bb
+content-type: application/xml
+user-agent: aws-sdk-cpp/1.11.201 ua/2.0 md/aws-crt#0.24.3 os/Darwin/23.3.0 md/arch#arm64 lang/c++#C++11 md/Clang#15.0.0 cfg/retry-mode#default api/S3_Control
+x-amz-account-id: 393252543207
+x-amz-api-version: 2018-08-20
+x-amz-content-sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date: 20240310T165056Z
+
+
+[DEBUG] 2024-03-10 16:50:56.081 CURL [0x16d593000] (HeaderIn) HTTP/1.1 200 OK
+
+[DEBUG] 2024-03-10 16:50:56.081 CURL [0x16d593000] (HeaderIn) x-amz-id-2: YIT9dMeDAcbsnKx6BtnoAXxy3Ta8SydNqLMOBO5+38+o7aoUQrKevn83QRnfL1kfLiL5zhSK5EY=
+
+[DEBUG] 2024-03-10 16:50:56.081 CURL [0x16d593000] (HeaderIn) x-amz-request-id: J58W1QF1P8X7TD89
+
+[DEBUG] 2024-03-10 16:50:56.082 CURL [0x16d593000] (HeaderIn) Date: Sun, 10 Mar 2024 16:50:57 GMT
+
+[DEBUG] 2024-03-10 16:50:56.082 CURL [0x16d593000] (HeaderIn) Transfer-Encoding: chunked
+
+[DEBUG] 2024-03-10 16:50:56.082 CURL [0x16d593000] (HeaderIn) Server: AmazonS3
+
+[DEBUG] 2024-03-10 16:50:56.082 CURL [0x16d593000] (HeaderIn) 
+
+[DEBUG] 2024-03-10 16:50:56.082 CURL [0x16d593000] (DataIn) 154
+<?xml version="1.0" encoding="UTF-8"?>
+<PublicAccessBlockConfiguration xmlns="http://awss3control.amazonaws.com/doc/2018-08-20/"><BlockPublicAcls>false</BlockPublicAcls><IgnorePublicAcls>false</IgnorePublicAcls><BlockPublicPolicy>false</BlockPublicPolicy><RestrictPublicBuckets>false</RestrictPublicBuckets></PublicAccessBlockConfiguration>
+
+[DEBUG] 2024-03-10 16:50:56.082 CURL [0x16d593000] (DataIn) 0
+
+
+[DEBUG] 2024-03-10 16:50:56.082 CURL [0x16d593000] (Text) Connection #0 to host 393252543207.s3-control.us-east-1.amazonaws.com left intact
+
+[DEBUG] 2024-03-10 16:50:56.082 CurlHttpClient [0x16d593000] Returned http response code 200
+[DEBUG] 2024-03-10 16:50:56.082 CurlHttpClient [0x16d593000] Releasing curl handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:56.082 CurlHandleContainer [0x16d593000] Releasing curl handle 0x148810c00
+[DEBUG] 2024-03-10 16:50:56.082 CurlHandleContainer [0x16d593000] Notified waiting threads.
+[DEBUG] 2024-03-10 16:50:56.082 AWSClient [0x16d593000] Request returned successful response.
+[INFO] 2024-03-10 16:50:56.083 CurlHandleContainer [0x1d9975c40] Cleaning up CurlHandleContainer.
+[DEBUG] 2024-03-10 16:50:56.083 CurlHandleContainer [0x1d9975c40] Cleaning up 0x14880d400
+[DEBUG] 2024-03-10 16:50:56.083 CurlHandleContainer [0x1d9975c40] Cleaning up 0x148810c00
+[INFO] 2024-03-10 16:50:56.085 CurlHandleContainer [0x1d9975c40] Cleaning up CurlHandleContainer.
+[DEBUG] 2024-03-10 16:50:56.085 CurlHandleContainer [0x1d9975c40] Cleaning up 0x15001f000
+[DEBUG] 2024-03-10 16:50:56.085 CurlHandleContainer [0x1d9975c40] Cleaning up 0x150017800
+[INFO] 2024-03-10 16:50:56.087 CurlHandleContainer [0x1d9975c40] Cleaning up CurlHandleContainer.
+[DEBUG] 2024-03-10 16:50:56.087 CurlHandleContainer [0x1d9975c40] Cleaning up 0x148014800
+[DEBUG] 2024-03-10 16:50:56.087 CurlHandleContainer [0x1d9975c40] Cleaning up 0x148015e00
+[INFO] 2024-03-10 16:50:56.089 Aws_Init_Cleanup [0x1d9975c40] Shutdown AWS SDK for C++.
+[INFO] 2024-03-10 16:50:56.089 CurlHandleContainer [0x1d9975c40] Cleaning up CurlHandleContainer.
+[DEBUG] 2024-03-10 16:50:56.089 HttpClientFactory [0x1d9975c40] Cleanup Http Static State
+[DEBUG] 2024-03-10 16:50:56.089 HttpClientFactory [0x1d9975c40] Cleanup Curl Http Client
