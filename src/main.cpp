@@ -60,7 +60,7 @@ int main(int argc, char **argv) {
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
         
-        // role session name required for Kubernetes ServiceAccount WebIdentity Auth
+        // role session name required for Kubernetes ServiceAccount WebIdentity Auth. Test
         auto setRoleName = AssumeRoleRequest();
         if (setRoleName.RoleSessionNameHasBeenSet() == true){
             std::cout << "AWS_ROLE_SESSION_NAME is set" << std::endl;
