@@ -66,6 +66,7 @@ int main(int argc, char **argv) {
             std::cout << "AWS_ROLE_SESSION_NAME is set" << std::endl;
         } else {
             setRoleName.SetRoleSessionName("kops_s3_acl");
+            std::cout << "setting AWS_ROLE_SESSION_NAME: kops_s3_acl" << std::endl;
         }
 
         // Test Cred Chain Delegation success
