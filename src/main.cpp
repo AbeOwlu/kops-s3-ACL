@@ -9,6 +9,7 @@
 #include <aws/s3control/model/PublicAccessBlockConfiguration.h>
 #include <aws/s3control/model/PutPublicAccessBlockRequest.h>
 #include <aws/s3control/model/GetPublicAccessBlockRequest.h>
+#include <aws/sts/model/AssumeRoleRequest.h>
 #include <future>
 #include <thread>
 
@@ -54,10 +55,19 @@ int main(int argc, char **argv) {
     int exit = 0;
     std::unique_lock<std::mutex> unique_lock(lock);
     {
+        
         Aws::Client::ClientConfiguration clientConfig;
         // Optional: Set to the AWS Region (overrides config file).
         // clientConfig.region = "us-east-1";
-               
+        
+        // role session name required for Kubernetes ServiceAccount WebIdentity Auth
+        auto setRoleName = AssumeRoleRequest();
+        if (setRoleName.RoleSessionNameHasBeenSet() == true){
+            std::cout << "AWS_ROLE_SESSION_NAME is set" << std::endl;
+        } else {
+            setRoleName.SetRoleSessionName("kops_s3_acl");
+        }
+
         // Test Cred Chain Delegation success
         auto provider = Aws::MakeShared<DefaultAWSCredentialsProviderChain>("alloc-tag");
         auto creds = provider->GetAWSCredentials();
