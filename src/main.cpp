@@ -130,53 +130,56 @@ int main(int argc, char **argv) {
             printBlockConfig(block);
         }
 
-        if (block.GetBlockPublicAcls() && block.GetIgnorePublicAcls() && block.GetBlockPublicPolicy() && block.GetRestrictPublicBuckets()) {
+        /*
+        * this outer if block is ensuring the s3 acl turns on before the code turns it off - efficcient
+        * but the JWKs public endpoint > https://<idp>/well-known/opend-configuration < is unreachable when s3 public access is blocked
+        * if this code runs in kops cluster with s3 issuer discovery, the s3 public access mustn't turn back on
+        */
+        // if (block.GetBlockPublicAcls() && block.GetIgnorePublicAcls() && block.GetBlockPublicPolicy() && block.GetRestrictPublicBuckets()) {
                     
-            //turn acct ACL Block config off for kops s3 access if on
-            block.SetBlockPublicAcls(false);
-            block.SetIgnorePublicAcls(false);
-            block.SetBlockPublicPolicy(false);
-            block.SetRestrictPublicBuckets(false);
-            printBlockConfig(block);
+        //turn acct ACL Block config off for kops s3 access if on
+        block.SetBlockPublicAcls(false);
+        block.SetIgnorePublicAcls(false);
+        block.SetBlockPublicPolicy(false);
+        block.SetRestrictPublicBuckets(false);
+        
+        auto putReq = PutPublicAccessBlockRequest().WithAccountId(acctId).WithPublicAccessBlockConfiguration(block);
+        auto putBlock = s3Cont.PutPublicAccessBlock(putReq);
+
+        if (!putBlock.IsSuccess()) {
+            std::cout << "\nFailed with error : " << putBlock.GetError() << std::endl;
             
-            
-            auto putReq = PutPublicAccessBlockRequest().WithAccountId(acctId).WithPublicAccessBlockConfiguration(block);
-            auto putBlock = s3Cont.PutPublicAccessBlock(putReq);
+        } else {
 
-            if (!putBlock.IsSuccess()) {
-                std::cout << "\nFailed with error : " << putBlock.GetError() << std::endl;
-                
-            } else {
+            std::shared_ptr<const Aws::Client::AsyncCallerContext> context = Aws::MakeShared<Aws::Client::AsyncCallerContext>("PutAllocationTag");
+            s3Cont.GetPublicAccessBlockAsync(getReq, GetObjectAsyncFinished, context);
+            unblock_notify.wait(unique_lock);
+            std::cout << "Relaxed Block ACL Finished" << std::endl;
 
-                std::shared_ptr<const Aws::Client::AsyncCallerContext> context = Aws::MakeShared<Aws::Client::AsyncCallerContext>("PutAllocationTag");
-                s3Cont.GetPublicAccessBlockAsync(getReq, GetObjectAsyncFinished, context);
-                unblock_notify.wait(unique_lock);
-                std::cout << "Relaxed Block ACL Finished" << std::endl;
+        // std::cout << "Done" << std::endl;
+        // auto fut = Aws::MakeShared< std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcome()>>("alloc-tag", futBlock)->get_future();
+        
+        // futBlock->*get_future();
+        // Aws::Client::AsyncCallerContext::S
+        // auto fut = Aws::MakeShared< std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcomeCallable()>>("alloc-tag", futBlock);
+        // auto task = fut->get_future();
+        // std::thread t(std::move(&task));
+        // task.wait();
+        // t.join();
+        // auto task = fut->get_future();
+        // std::thread t(std::move(&task));
+        // std::cout << task.get().GetResult().GetPublicAccessBlockConfiguration().GetBlockPublicAcls() << std::endl;
+        
+        // std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcome()> task();
+        // fut->get_future();
+        // std::shared_ptr<Aws::Client::AsyncCallerContext> context = Aws::MakeShared<Aws::Client::AsyncCallerContext>("alloc-tag", futBlock);
+        // context->SetUUID(acctId);
 
-                            // std::cout << "Done" << std::endl;
-            // auto fut = Aws::MakeShared< std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcome()>>("alloc-tag", futBlock)->get_future();
-            
-            // futBlock->*get_future();
-            // Aws::Client::AsyncCallerContext::S
-            // auto fut = Aws::MakeShared< std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcomeCallable()>>("alloc-tag", futBlock);
-            // auto task = fut->get_future();
-            // std::thread t(std::move(&task));
-            // task.wait();
-            // t.join();
-            // auto task = fut->get_future();
-            // std::thread t(std::move(&task));
-            // std::cout << task.get().GetResult().GetPublicAccessBlockConfiguration().GetBlockPublicAcls() << std::endl;
-            
-            // std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcome()> task();
-            // fut->get_future();
-            // std::shared_ptr<Aws::Client::AsyncCallerContext> context = Aws::MakeShared<Aws::Client::AsyncCallerContext>("alloc-tag", futBlock);
-            // context->SetUUID(acctId);
+        // block = GetResult().GetPublicAccessBlockConfiguration();
+        // printBlockConfig(block);
 
-            // block = GetResult().GetPublicAccessBlockConfiguration();
-            // printBlockConfig(block);
-
-            }
         }
+        // }
     }
 
     Aws::ShutdownAPI(options); // Should only be called once.
