@@ -43,16 +43,16 @@ int main(int argc, char **argv) {
      * TODO: take coomand line flags for acct and kops bucket name
      * For security reasons, program does not take any input at the moment 
     */
-    if (argc > 1) {
-        return 1;
-    }
+    // if (argc > 1) {
+    //     return 1;
+    // }
 
     Aws::SDKOptions options;
     // Optionally change the log level for debugging.
-    // options.loggingOptions.logLevel = Utils::Logging::LogLevel::Info;
+    options.loggingOptions.logLevel = Utils::Logging::LogLevel::Trace;
     
     Aws::InitAPI(options); // Once.
-    int exit = 0;
+    int exit = 1;
     std::unique_lock<std::mutex> unique_lock(lock);
     {
         
@@ -70,11 +70,17 @@ int main(int argc, char **argv) {
         }
 
         // Test Cred Chain Delegation success
-        auto provider = Aws::MakeShared<DefaultAWSCredentialsProviderChain>("alloc-tag");
-        auto creds = provider->GetAWSCredentials();
-        if (creds.IsEmpty()) {
-            std::cerr << "\nFailed authentication... kops_s3_acl bailing out..." << std::endl;
-            exit = 1;
+        try{
+            auto provider = Aws::MakeShared<DefaultAWSCredentialsProviderChain>("alloc-tag");
+            auto creds = provider->GetAWSCredentials();
+            if (creds.IsEmpty()) {
+                std::cerr << "\nFailed authentication... kops_s3_acl bailing out..." << std::endl;
+
+                return exit;
+            }
+        }catch(std::exception){
+            std::cout << "Last Cred Chain: WebIdentityProvider failed. Exiting..." << std::endl;
+            
             return exit;
         }
 
@@ -83,7 +89,7 @@ int main(int argc, char **argv) {
 
         if (!outcome.IsSuccess()) {
             std::cerr << "\nFailed with error: " << outcome.GetError() << std::endl;
-            exit = 1;
+            
         } else {
             std::cout << "\nS3 Bucket Access: Discovered " << outcome.GetResult().GetBuckets().size()
                       << " buckets\n";
@@ -94,7 +100,7 @@ int main(int argc, char **argv) {
 
         if (outcome.GetResult().GetBuckets().size() == 0) {
             std::cout << "\nNo S3 Bucket for Kops oidc or state store found in this AWS account. No Acct ACL block changes made. Exiting..." << std::endl;
-            exit = 1;
+            
             return exit;
         }
 
@@ -105,7 +111,7 @@ int main(int argc, char **argv) {
         // std::cout << "\nAcct_ID is : \n" << acctId << std::endl;
         if (!dataOut.IsSuccess()) {
             std::cerr << "\nFailed with error: " << dataOut.GetError() << std::endl;
-            exit = 1;
+            
         } else {
             std::cout << "\nAWS Acct ID endin in: " << "XXXXXX"<< dataOut.GetResult().GetAccount().substr(7) << " retrieved"<< std::endl;
         }
@@ -118,7 +124,7 @@ int main(int argc, char **argv) {
         
         if (!aclBlock.IsSuccess()) {
             std::cout << "\nFailed with error : " << aclBlock.GetError() << std::endl;
-            exit = 1;
+            
         } else {
             block = aclBlock.GetResult().GetPublicAccessBlockConfiguration();
             printBlockConfig(block);
@@ -139,7 +145,7 @@ int main(int argc, char **argv) {
 
             if (!putBlock.IsSuccess()) {
                 std::cout << "\nFailed with error : " << putBlock.GetError() << std::endl;
-                exit = 1;
+                
             } else {
 
                 std::shared_ptr<const Aws::Client::AsyncCallerContext> context = Aws::MakeShared<Aws::Client::AsyncCallerContext>("PutAllocationTag");
@@ -147,12 +153,34 @@ int main(int argc, char **argv) {
                 unblock_notify.wait(unique_lock);
                 std::cout << "Relaxed Block ACL Finished" << std::endl;
 
+                            // std::cout << "Done" << std::endl;
+            // auto fut = Aws::MakeShared< std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcome()>>("alloc-tag", futBlock)->get_future();
+            
+            // futBlock->*get_future();
+            // Aws::Client::AsyncCallerContext::S
+            // auto fut = Aws::MakeShared< std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcomeCallable()>>("alloc-tag", futBlock);
+            // auto task = fut->get_future();
+            // std::thread t(std::move(&task));
+            // task.wait();
+            // t.join();
+            // auto task = fut->get_future();
+            // std::thread t(std::move(&task));
+            // std::cout << task.get().GetResult().GetPublicAccessBlockConfiguration().GetBlockPublicAcls() << std::endl;
+            
+            // std::packaged_task< Aws::S3Control::Model::GetPublicAccessBlockOutcome()> task();
+            // fut->get_future();
+            // std::shared_ptr<Aws::Client::AsyncCallerContext> context = Aws::MakeShared<Aws::Client::AsyncCallerContext>("alloc-tag", futBlock);
+            // context->SetUUID(acctId);
+
+            // block = GetResult().GetPublicAccessBlockConfiguration();
+            // printBlockConfig(block);
+
             }
         }
     }
 
     Aws::ShutdownAPI(options); // Should only be called once.
-    return exit;
+    return 0;
 }
 
 void printBlockConfig(const Aws::S3Control::Model::PublicAccessBlockConfiguration &b){

@@ -1,4 +1,6 @@
 *.vscode
 *.png
 *.json
+*.log
+*.gitignore
 build/

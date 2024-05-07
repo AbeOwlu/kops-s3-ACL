@@ -1,32 +1,45 @@
+# ---
+
+# apiVersion: v1
+# kind: ServiceAccount
+# metadata:
+#   name: eks-pod-identity-delegate
+#   namespace: default
+
+# ---
+
 apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: kops-s3-acl
   namespace: default
 spec:
-  schedule: "* */2 * * *"
+  schedule: "*/30 * * * *"
 
   jobTemplate:
     spec:
       backoffLimit: 1
-      ttlSecondsAfterFinished: 3900
+      ttlSecondsAfterFinished: 3000
       template:
         spec:
+          securityContext:
+            fsGroup: 1000
+            runAsUser: 1000
           containers:
-          - name: kops-s3-acl
+          - command:
+            - /bin/bash
+            - -c
+            - sleep 20; ./kops_s3_acl; sleep 10 &
             image: public.ecr.aws/f6q5p7u8/kops-s3-acl:latest
-            command: 
-                - /bin/bash
-                - -c
-                - ./kops_s3_acl
             imagePullPolicy: IfNotPresent
+            lifecycle:
+              preStop:
+                exec:
+                  command:
+                  - /bin/bash
+                  - -c
+                  - cat ../aws_sdk* >> /proc/1/fd/1
+            name: kops-s3-acl
           restartPolicy: Never
+          terminationGracePeriodSeconds: 150
           serviceAccountName: eks-pod-identity-delegate
-
----
-
-apiVersion: v1
-kind: ServiceAccount
-metadata:
-  name: eks-pod-identity-delegate
-  namespace: default
