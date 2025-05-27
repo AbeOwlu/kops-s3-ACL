@@ -1,10 +1,10 @@
 ## KOPs-S3-ACL
 
-With the intorduction of block access configuration, https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html#configuring-block-public-access, overriding individual buckes acl and policy configuration.
+Quick fix for a painpoint where secure S3 public access block configurstion is overriden for all bucket acl by organizational policy.
 
-And KOPs cluster on AWS requirement https://kops.sigs.k8s.io/getting_started/aws/#cluster-oidc-store, to save cluster state and oidc in S3 bucket(s) configured, public ACL access is required.
+And [KOPs cluster on AWS requirement](https://kops.sigs.k8s.io/getting_started/aws/#cluster-oidc-store) to save cluster state and oidc in S3 bucket needs this public ACL access.
 
-This program checks AWS account s3 ACL configuration and turns it off to alows KOPs to s3 access
+This program checks AWS account s3 ACL configuration and enables public ACL config to allow KOPs to access s3 buckets.
 
 ---
 
